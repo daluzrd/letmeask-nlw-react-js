@@ -1,17 +1,18 @@
-import { Button } from "./components/Button";
+import { BrowserRouter, Route } from "react-router-dom";
+import { AuthContextProvider } from "./components/AuthContextProvider";
+import { Home } from "./pages/Home";
+import { NewRoom } from "./pages/NewRoom";
+import "./styles/global.scss";
 
-function App() {
+const App = () => {
 	return (
-		<>
-			<Button />
-			<Button />
-			<Button />
-			<Button />
-			<Button />
-			<Button />
-			<Button />
-		</>
+		<BrowserRouter>
+			<AuthContextProvider>
+				<Route exact path="/" component={Home} />
+				<Route path="/rooms/new" component={NewRoom} />
+			</AuthContextProvider>
+		</BrowserRouter>
 	);
-}
+};
 
 export default App;
