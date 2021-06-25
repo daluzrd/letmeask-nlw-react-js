@@ -4,7 +4,7 @@ import IllustrationImg from "../assets/images/illustration.svg";
 import GoogleIconImage from "../assets/images/google-icon.svg";
 import Logo from "../assets/images/logo.svg";
 import "../styles/auth.scss";
-import { useAuth } from "../hooks/useHooks";
+import { useAuth } from "../hooks/useAuth";
 
 export const Home = () => {
 	const history = useHistory();

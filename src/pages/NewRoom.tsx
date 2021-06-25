@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { useAuth } from "../hooks/useHooks";
+import { useAuth } from "../hooks/useAuth";
 import { Button } from "../components/Button";
 import IllustrationImg from "../assets/images/illustration.svg";
 import Logo from "../assets/images/logo.svg";
